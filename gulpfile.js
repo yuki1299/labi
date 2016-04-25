@@ -70,7 +70,7 @@ gulp.task('images', ['clean-images'], function() {
     return gulp
         .src(config.images)
         .pipe($.imagemin({optimizationLevel: 4}))
-        .pipe(gulp.dest(config.build + 'images'));
+        .pipe(gulp.dest(config.build + 'assets/images'));
 });
 
 /**

@@ -32,7 +32,7 @@ module.exports = function() {
         dest: dest,
         fonts: bower.directory + 'ionic/fonts/**/*.*',
         htmltemplates: app + '**/*.html',
-        images: src + 'images/**/*.*',
+        images: src + 'assets/images/**/*.*',
         index: src + 'index.html',
         // app js, with no specs
         js: [

@@ -21,7 +21,9 @@ All working files are underneath the 'src' folder trying to follow the [angular 
 
     /src
         /app
-        /images
+        /assets
+            /fonts
+            /images
         /lib
         /styles
         index.html
