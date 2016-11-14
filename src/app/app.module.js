@@ -8,8 +8,11 @@
         'app.core',
 
         /* Feature areas */
-        'app.account',
-        'app.chats',
-        'app.dash'
+        'app.play_game',
+        'app.menu',
+        'app.home',
+        'app.challenges',
+        'app.themes',
+        'app.how_to'
     ]);
 })();

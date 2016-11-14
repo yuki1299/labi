@@ -2,13 +2,13 @@
     'use strict';
 
     angular
-    .module('app.account')
-    .controller('AccountController', AccountController);
+    .module('app.how_to')
+    .controller('HowToController', HowToController);
 
-    AccountController.$inject = [];
+    HowToController.$inject = [];
 
     /* @ngInject */
-    function AccountController() {
+    function HowToController() {
         var vm = this;
         vm.settings = {
             enableFriends: true

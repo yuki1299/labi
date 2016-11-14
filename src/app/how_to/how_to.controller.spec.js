@@ -1,17 +1,17 @@
 /* jshint -W117, -W030 */
-describe('ChatsController', function() {
+describe('AccountController', function() {
     var $controller;
 
     // Load the module for the account
-    beforeEach(module('app.chats'));
+    beforeEach(module('app.account'));
 
     // Instantiate the controller and mocks for every test
     beforeEach(inject(function(_$controller_) {
         var $scope = {};
-        $controller = _$controller_('ChatsController', {$scope: $scope});
+        $controller = _$controller_('AccountController', {$scope: $scope});
     }));
 
-    describe('Chats controller', function() {
+    describe('Account controller', function() {
 
         it ('should be created successully', function() {
             expect($controller).toBeDefined();
@@ -19,8 +19,8 @@ describe('ChatsController', function() {
 
         describe('after activate', function() {
 
-            it ('should have at least one chat', function() {
-                expect($controller.chats.length).toBeGreaterThan(0);
+            it('should have enabled friends to be true', function() {
+                expect($controller.settings.enableFriends).toEqual(true);
             });
         });
     });

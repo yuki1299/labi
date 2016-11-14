@@ -20,3 +20,286 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "src/lib/ionic/scss/ionic";
 
+/* CUSTOM CSS */
+/* MAIN */
+
+@font-face {
+    font-family: 'gigergiger';
+    src: url('../assets/fontes/giger-webfont.woff2') format('woff2'),
+         url('../assets/fontes/giger-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1, h2, h3, h4, p {
+  font-family: "gigergiger";
+}
+
+.home-page {
+  height: 1000px;
+}
+
+.game-page {
+  height: 100%;
+}
+
+.size-header {
+  height: 70px !important;
+}
+
+.size-header a:before {
+  font-size: 55px !important;
+  padding-top: 12px !important;
+}
+
+.size-header h1 {
+  font-size: 35px !important;
+  margin-top: 12px !important;
+}
+
+.padding {
+  height: 100%;
+}
+
+/* TABS DISPLAY */
+
+.tab-nav.tabs {
+  display: none !important;
+}
+
+/* HOME */
+
+.home-page img {
+  margin: 0 auto;
+  display: block;
+  margin-top: 280px;
+}
+
+/* BUTTONS */ 
+
+.play-button {
+  margin-top: 150px !important;
+  background-color: rgba(22, 155, 213, 1);
+}
+
+.theme-button {
+  margin-top: 400px !important;
+}
+
+.button.active, .button.activated {
+  background-color: rgb(20, 112, 152) !important; 
+}
+
+.bluetooth-button,
+.theme-button,
+.how-to-button,
+.challenges-button {
+  background-color: rgba(22, 155, 213, 1);
+}
+
+.button.button-block h1 {
+  color: #fff;
+}
+
+a.button-block,
+a.button-full,
+.button-full > a.button,
+input.button.button-block {
+  width: 50%; 
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+/* CHALLENGES PAGE */
+
+.challenges-first-line,
+.challenges-second-line,
+.challenges-third-line {
+  width: 30%;
+  height: 350px;
+  float: left;
+  margin: 0 17px 0 17px;
+}
+
+.challenges-first-line {
+  margin-top: 50px !important;
+}
+
+.challenges-first-line.first,
+.challenges-second-line.first,
+.challenges-third-line.first {
+  margin-left: 0px !important;
+}
+
+.challenges-first-line.third,
+.challenges-second-line.third,
+.challenges-third-line.third {
+  margin-right: 0px !important;
+}
+
+.challenges-first-line img,
+.challenges-second-line img,
+.challenges-third-line img {
+  margin: 0 auto;
+  display: block;
+}
+
+.challenges-first-line h2,
+.challenges-second-line h2,
+.challenges-third-line h2 {
+  margin-top: 25px;
+  font-size: 22px;
+}
+
+/* THEME PAGE */
+
+.theme-content {
+  height: 500px;
+}
+
+.box1, 
+.box2, 
+.box3 {
+  border: 2px solid blue;
+  height: 1000px;
+}
+
+.bar-subheader {
+  top: 70px !important;
+  font-size: 25px;
+}
+
+.theme-select-button {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.box1 h1, 
+.box2 h1, 
+.box3 h1 {
+  margin-top: 400px;
+}
+
+.theme-select-button {
+  font-size: 25px;
+  color: #fff;
+  bottom: 70px;
+  left: 260px;
+  display: block;
+  position: absolute;
+  background-color: #0c60ee;
+}
+
+.bar.bar-assertive {
+  border-color: #0c60ee !important;
+  background-color: #0c60ee !important;
+}
+
+.bar-subheader h2 {
+  font-size: 27px !important;
+}
+
+/* GAME PAGE */
+
+.main-game {
+  width: 100%;
+  height: 350px;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+}
+
+.function-game {
+  width: 100%;
+  height: 150px;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+}
+
+.function-commands {
+  width: 100%;
+  height: 200px;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+}
+
+.function-buttons {
+  width: 100%;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.hint-game {
+  width: 73%;
+  height: 200px;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+}
+
+.exit-button {
+  width: 10%;
+  background-color: red;
+  height: 11%;
+  display: block;
+  float: right;
+}
+
+.game-page h1 {
+  margin-top: 70px;
+}
+
+.function-spacement {
+  width: 20%;
+  float: left;
+  height: 140px;
+  margin: 30px 3% 0px 3%;
+  border-radius: 15px;
+}
+
+.function-spacement:first-child {
+  margin-left: 5px;
+}
+
+.function-spacement:last-child {
+  margin-right: 0;
+}
+
+.left-function {
+  background-color: red;
+  display: block;
+}
+
+.upper-function {
+  background-color: blue;
+  display: block;
+}
+
+.right-function {
+  background-color: green;
+  display: block;
+}
+
+.function-function {
+  background-color: yellow;
+  display: block;
+}
+
+.hint-wrap {
+  margin-top: 60px;
+}
+
+.send-function {
+  float: right;
+  height: 140px;
+  width: 20%; 
+  margin: 25px 10px;
+  border-radius: 15px;
+  display: block;
+  background-color: black;
+}
+
+/* HOW TO PAGE */
+
+.home-page h2 {
+  font-size: 22px;
+  margin-top: 60px;
+}

@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-    .module('app.dash')
+    .module('app.themes')
     .config(routes);
 
     routes.$inject = ['$stateProvider'];
@@ -10,12 +10,12 @@
     function routes($stateProvider) {
         $stateProvider
 
-        .state('tab.dash', {
-            url: '/dash',
+        .state('tab.themes', {
+            url: '/themes',
             views: {
-                'tab-dash': {
-                    templateUrl: 'app/dash/dash.html',
-                    controller: 'DashController as vm'
+                'tab-themes': {
+                    templateUrl: 'app/themes/themes.html',
+                    controller: 'ThemesController as vm'
                 }
             }
         });

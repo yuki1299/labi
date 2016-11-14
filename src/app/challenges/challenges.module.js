@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-    .module('app.chats', [
+    .module('app.challenges', [
         'ionic'
     ]);
 })();

@@ -2,13 +2,13 @@
     'use strict';
 
     angular
-    .module('app.dash')
-    .controller('DashController', DashController);
+    .module('app.home')
+    .controller('HomeController', HomeController);
 
-    DashController.$inject = [];
+    HomeController.$inject = [];
 
     /* @ngInject */
-    function DashController() {
+    function HomeController() {
         var vm = this;
 
         activate();

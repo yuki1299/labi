@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-    .module('app.account')
+    .module('app.home')
     .config(routes);
 
     routes.$inject = ['$stateProvider'];
@@ -10,12 +10,12 @@
     function routes($stateProvider) {
         $stateProvider
 
-        .state('tab.account', {
-            url: '/account',
+        .state('tab.home', {
+            url: '/home',
             views: {
-                'tab-account': {
-                    templateUrl: 'app/account/account.html',
-                    controller: 'AccountController as vm'
+                'tab-home': {
+                    templateUrl: 'app/home/home.html',
+                    controller: 'HomeController as vm'
                 }
             }
         });

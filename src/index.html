@@ -13,6 +13,7 @@
         <!-- build:css styles/app.css -->
         <!-- inject:css -->
         <link rel="stylesheet" href=".tmp/ionic.app.css">
+        <link rel="stylesheet" href="src/styles/ionic.app.scss">
         <!-- endinject -->
         <!-- endbuild -->
 
@@ -29,10 +30,6 @@
         <!--
             The nav bar that will be updated as we navigate between views.
         -->
-        <ion-nav-bar class="bar-stable">
-            <ion-nav-back-button>
-            </ion-nav-back-button>
-        </ion-nav-bar>
         <!--
             The views will be rendered in the <ion-nav-view> directive below
             Templates are in the /templates folder (but you could also
@@ -49,21 +46,30 @@
         <!-- build:js js/app.js -->
         <!-- inject:js -->
         <script src="app/app.module.js"></script>
-        <script src="app/account/account.module.js"></script>
-        <script src="app/chats/chats.module.js"></script>
+        <script src="app/play_game/play_game.module.js"></script>
+        <script src="app/menu/menu.module.js"></script>
         <script src="app/core/app.core.module.js"></script>
-        <script src="app/dash/dash.module.js"></script>
-        <script src="app/account/account.controller.js"></script>
-        <script src="app/account/account.routes.js"></script>
+        <script src="app/home/home.module.js"></script>
+        <script src="app/play_game/play_game.controller.js"></script>
+        <script src="app/play_game/play_game.routes.js"></script>
         <script src="app/app.config.js"></script>
         <script src="app/app.routes.js"></script>
         <script src="app/app.run.js"></script>
-        <script src="app/chats/chat-detail.controller.js"></script>
-        <script src="app/chats/chats.controller.js"></script>
-        <script src="app/chats/chats.routes.js"></script>
-        <script src="app/chats/chats.service.js"></script>
-        <script src="app/dash/dash.controller.js"></script>
-        <script src="app/dash/dash.routes.js"></script>
+        <script src="app/menu/chat-detail.controller.js"></script>
+        <script src="app/menu/menu.controller.js"></script>
+        <script src="app/menu/menu.routes.js"></script>
+        <script src="app/menu/menu.service.js"></script>
+        <script src="app/home/home.controller.js"></script>
+        <script src="app/home/home.routes.js"></script>
+        <script src="app/challenges/challenges.module.js"></script>
+        <script src="app/challenges/challenges.controller.js"></script>
+        <script src="app/challenges/challenges.routes.js"></script>
+        <script src="app/themes/themes.module.js"></script>
+        <script src="app/themes/themes.controller.js"></script>
+        <script src="app/themes/themes.routes.js"></script>
+        <script src="app/how_to/how_to.module.js"></script>
+        <script src="app/how_to/how_to.controller.js"></script>
+        <script src="app/how_to/how_to.routes.js"></script>
         <!-- endinject -->
 
         <!-- inject:templates:js -->

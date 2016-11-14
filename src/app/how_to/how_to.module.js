@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-    .module('app.dash', [
+    .module('app.how_to', [
         'ionic'
     ]);
 })();
