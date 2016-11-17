@@ -109,7 +109,7 @@ input.button.button-block {
   margin: 0 auto;
   border-radius: 15px;
 }
-
+ 
 /* CHALLENGES PAGE */
 
 .challenges-first-line,
@@ -228,13 +228,6 @@ input.button.button-block {
   border-radius: 15px;
 }
 
-.hint-game {
-  width: 73%;
-  height: 200px;
-  background-color: #f3f3f3;
-  border-radius: 15px;
-}
-
 .exit-button {
   width: 10%;
   background-color: red;
@@ -288,10 +281,9 @@ input.button.button-block {
 }
 
 .send-function {
-  float: right;
-  height: 140px;
-  width: 20%; 
-  margin: 25px 10px;
+  height: 100px;
+  width: 50%; 
+  margin: 0 auto;
   border-radius: 15px;
   display: block;
   background-color: black;

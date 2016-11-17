@@ -13,6 +13,8 @@
         'app.home',
         'app.challenges',
         'app.themes',
-        'app.how_to'
+        'app.how_to',
+        'app.challenge_map',
+        'app.challenge_map2'
     ]);
 })();
