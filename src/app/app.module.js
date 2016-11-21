@@ -9,6 +9,7 @@
 
         /* Feature areas */
         'app.play_game',
+        'app.play_game2',
         'app.menu',
         'app.home',
         'app.challenges',

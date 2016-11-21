@@ -257,23 +257,47 @@ input.button.button-block {
 }
 
 .left-function {
-  background-color: red;
   display: block;
+  border: solid gray;
+}
+
+.ion-ios-arrow-left {
+  font-size: 130px;
+  padding-left: 40px;
+  padding-top: 5px;
 }
 
 .upper-function {
-  background-color: blue;
   display: block;
+  border: solid gray;
+}
+
+.ion-ios-arrow-thin-up {
+  font-size: 140px;
+  padding-left: 45px;
 }
 
 .right-function {
-  background-color: green;
   display: block;
+  border: solid gray;
+}
+
+.ion-ios-arrow-right {
+  font-size: 130px;
+  padding-left: 50px;
+  padding-top: 5px;
 }
 
 .function-function {
-  background-color: yellow;
   display: block;
+  border: solid gray;
+}
+
+.function-function h1 {
+  font-size: 130px;
+  padding-left: 40px;
+  margin-top: -15px;
+  color: gray;
 }
 
 .hint-wrap {
@@ -286,7 +310,16 @@ input.button.button-block {
   margin: 0 auto;
   border-radius: 15px;
   display: block;
-  background-color: black;
+  border: solid gray;
+}
+
+.send-function a {
+  font-size: 70px;
+  padding-left: 50px;
+  display: block;
+  margin-top: 35px;
+  text-decoration: none;
+  color: gray;
 }
 
 /* HOW TO PAGE */
