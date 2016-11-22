@@ -261,10 +261,28 @@ input.button.button-block {
   border: solid gray;
 }
 
-.ion-ios-arrow-left {
+.ion-ios-refresh-empty {
   font-size: 130px;
   padding-left: 40px;
   padding-top: 5px;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+
+.ion-ios-refresh-empty.right-icon {
+  font-size: 130px;
+  padding-left: 40px;
+  padding-top: 5px;
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
 }
 
 .upper-function {
@@ -280,12 +298,6 @@ input.button.button-block {
 .right-function {
   display: block;
   border: solid gray;
-}
-
-.ion-ios-arrow-right {
-  font-size: 130px;
-  padding-left: 50px;
-  padding-top: 5px;
 }
 
 .function-function {
