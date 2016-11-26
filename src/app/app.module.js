@@ -6,6 +6,7 @@
         /* Shared modules */
         'ionic',
         'app.core',
+        'ngCordova',
 
         /* Feature areas */
         'app.play_game',
