@@ -7,6 +7,7 @@
         'ionic',
         'app.core',
         'ngCordova',
+        'ngCordovaBluetoothLE',
 
         /* Feature areas */
         'app.play_game',

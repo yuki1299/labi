@@ -1,44 +1,36 @@
 <ion-view view-title="Home">
-    <ion-content class="padding">
-      <div class="bar bar-header bar-positive size-header">
-          <a class="button icon ion-navicon" href="#/tab/menu"></a>
-            <h1 class="title">Home</h1>
-          <a class="button icon ion-home" href="#/tab/home"></a>
+  <ion-content class="ionic" id="home">
+    <div class="bar bar-header bar-positive size-header">
+        <a class="button icon ion-navicon" href="#/tab/menu"></a>
+          <h1 class="title">Home</h1>
+        <a class="button icon ion-home" href="#/tab/home"></a>
+    </div>
+    <div class="wrapper">
+      <div class="home-page">
+        <img src="assets/images/labi-logo.jpg">
+
+        <a class="button button-block play-button" ng-click=initialize()>
+           <h1>INICIALIZAR</h1>
+        </a>
+        <a class="button button-block play-button" ng-click=retrieveConnected()>
+           <h1>Retrive Connected</h1>
+        </a>
+        <a class="button button-block play-button" ng-click=testCommand()>
+           <h1>Teste Comando</h1>
+        </a>
+        <a class="button button-block play-button" ng-click=discover()>
+           <h1>Discover</h1>
+        </a>
+        <a class="button button-block play-button" ng-click=scan()>
+           <h1>Scan</h1>
+        </a>
+        <a class="button button-block play-button" href="#/tab/themes">
+           <h1>JOGAR</h1>
+        </a>
+        <a class="button button-block bluetooth-button" ng-click="connect(selectedDevice)">
+           <h1>BLUETOOTH</h1>
+        </a>
       </div>
-      <div class="item home-page">
-          <!-- <h2>Welcome back!</h2> -->
-          <img src="assets/images/labi-logo.jpg">
-          <!-- <p>Look what happened</p> -->
-          <a class="button button-block play-button" href="#/tab/themes">
-             <h1>JOGAR</h1>
-          </a>
-          <a class="button button-block bluetooth-button" ng-click="connect()">
-             <h1>BLUETOOTH</h1>
-          </a>
-      </div>
-        <!-- <div class="list card">
-            <div class="item item-divider">Recent Updates</div>
-            <div class="item item-body">
-                <div>
-                    There is a fire in <b>sector 3</b>
-                </div>
-            </div>
-        </div>
-        <div class="list card">
-            <div class="item item-divider">Health</div>
-            <div class="item item-body">
-                <div>
-                    You ate an apple today!
-                </div>
-            </div>
-        </div>
-        <div class="list card">
-            <div class="item item-divider">Upcoming</div>
-            <div class="item item-body">
-                <div>
-                    You have <b>29</b> meetings on your calendar tomorrow.
-                </div>
-            </div>
-        </div> -->
-    </ion-content>
+    </div>
+  </ion-content>
 </ion-view>
