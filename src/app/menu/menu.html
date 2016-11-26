@@ -1,12 +1,12 @@
 <ion-view view-title="Menu">
-    <ion-content class="padding">
+    <ion-content class="ionic">
         <div class="bar bar-header bar-positive size-header">
-            <a class="button icon ion-navicon" href="#/tab/menu"></a>
+            <a class="button icon ion-navicon" href="#/menu"></a>
               <h1 class="title">Menu</h1>
-            <a class="button icon ion-home" href="#/tab/home"></a>
+            <a class="button icon ion-home" href="#/home"></a>
         </div>
         <!-- <ion-list>
-            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in vm.chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+            <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in vm.chats" type="item-text-wrap" href="#/chats/{{chat.id}}">
                 <img ng-src="{{chat.face}}">
                 <h2>{{chat.name}}</h2>
                 <p>{{chat.lastText}}</p>
@@ -17,16 +17,18 @@
                 </ion-option-button>
             </ion-item>
         </ion-list> -->
-        <div class="item home-page">
-            <a class="button button-block theme-button" href="#/tab/themes">
-                <h1>TEMAS</h1>
-            </a>
-            <a class="button button-block challenges-button" href="#/tab/challenges">
-                <h1>DESAFIOS</h1>
-            </a>
-            <a class="button button-block how-to-button" href="#/tab/how_to">
-                <h1>COMO JOGAR</h1>
-            </a>
+        <div class="wrapper">
+            <div class="home-page">
+                <a class="button button-block theme-button" href="#/themes">
+                    <h1>TEMAS</h1>
+                </a>
+                <a class="button button-block challenges-button" href="#/challenges">
+                    <h1>DESAFIOS</h1>
+                </a>
+                <a class="button button-block how-to-button" href="#/how_to">
+                    <h1>COMO JOGAR</h1>
+                </a>
+            </div>
         </div>
     </ion-content>
 </ion-view>

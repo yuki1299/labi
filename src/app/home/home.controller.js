@@ -12,7 +12,7 @@
         var vm = this;
 
         $scope.$on("$ionicView.beforeEnter", function () {
-            $scope.selectedDevice = $scope.devices[$stateParams.address];
+            // $scope.selectedDevice = $scope.devices[$stateParams.address];
         });
 
 

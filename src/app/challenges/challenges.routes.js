@@ -10,14 +10,10 @@
     function routes($stateProvider) {
         $stateProvider
 
-        .state('tab.challenges', {
+        .state('challenges', {
             url: '/challenges',
-            views: {
-                'tab-challenges': {
-                    templateUrl: 'app/challenges/challenges.html',
-                    controller: 'ChallengesController as vm'
-                }
-            }
+            templateUrl: 'app/challenges/challenges.html',
+            controller: 'ChallengesController as vm'
         });
     }
 })();

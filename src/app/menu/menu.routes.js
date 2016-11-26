@@ -10,14 +10,10 @@
     function routes($stateProvider) {
         $stateProvider
 
-        .state('tab.menu', {
+        .state('menu', {
             url: '/menu',
-            views: {
-                'tab-menu': {
-                    templateUrl: 'app/menu/menu.html',
-                    controller: 'MenuController as vm'
-                }
-            }
+            templateUrl: 'app/menu/menu.html',
+            controller: 'MenuController as vm'
         });
     }
 })();

@@ -10,14 +10,10 @@
     function routes($stateProvider) {
         $stateProvider
 
-        .state('tab.themes', {
+        .state('themes', {
             url: '/themes',
-            views: {
-                'tab-themes': {
-                    templateUrl: 'app/themes/themes.html',
-                    controller: 'ThemesController as vm'
-                }
-            }
+            templateUrl: 'app/themes/themes.html',
+            controller: 'ThemesController as vm'
         });
     }
 })();
