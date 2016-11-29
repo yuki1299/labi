@@ -10,14 +10,10 @@
     function routes($stateProvider) {
         $stateProvider
 
-        .state('tab.how_to', {
+        .state('how_to', {
             url: '/how_to',
-            views: {
-                'tab-how_to': {
-                    templateUrl: 'app/how_to/how_to.html',
-                    controller: 'HowToController as vm'
-                }
-            }
+            templateUrl: 'app/how_to/how_to.html',
+            controller: 'HowToController as vm'
         });
     }
 })();

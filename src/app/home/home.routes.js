@@ -10,14 +10,10 @@
     function routes($stateProvider) {
         $stateProvider
 
-        .state('tab.home', {
+        .state('home', {
             url: '/home',
-            views: {
-                'tab-home': {
-                    templateUrl: 'app/home/home.html',
-                    controller: 'HomeController as vm'
-                }
-            }
+            templateUrl: 'app/home/home.html',
+            controller: 'HomeController as vm'
         });
     }
 })();

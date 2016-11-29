@@ -36,7 +36,7 @@ h1, h2, h3, h4, p {
 }
 
 .home-page {
-  height: 1000px;
+  // height: 100%;
 }
 
 .game-page {
@@ -64,21 +64,21 @@ h1, h2, h3, h4, p {
 /* TABS DISPLAY */
 
 .tab-nav.tabs {
-  display: none !important;
+  // display: none !important;
 }
 
 /* HOME */
 
 .home-page img {
-  margin: 0 auto;
+  margin: 80px auto 40px auto;
   display: block;
-  margin-top: 280px;
+  width: 50%;
 }
 
-/* BUTTONS */ 
+/* BUTTONS */
 
 .play-button {
-  margin-top: 150px !important;
+  margin-bottom: 20px !important;
   background-color: rgba(22, 155, 213, 1);
 }
 
@@ -87,7 +87,7 @@ h1, h2, h3, h4, p {
 }
 
 .button.active, .button.activated {
-  background-color: rgb(20, 112, 152) !important; 
+  background-color: rgb(20, 112, 152) !important;
 }
 
 .bluetooth-button,
@@ -105,11 +105,11 @@ a.button-block,
 a.button-full,
 .button-full > a.button,
 input.button.button-block {
-  width: 50%; 
+  width: 50%;
   margin: 0 auto;
   border-radius: 15px;
 }
- 
+
 /* CHALLENGES PAGE */
 
 .challenges-first-line,
@@ -157,11 +157,11 @@ input.button.button-block {
   height: 500px;
 }
 
-.box1, 
-.box2, 
+.box1,
+.box2,
 .box3 {
   border: 2px solid blue;
-  height: 1000px;
+  height: 93vh;
 }
 
 .bar-subheader {
@@ -170,12 +170,13 @@ input.button.button-block {
 }
 
 .theme-select-button {
-  width: 30%;
-  margin: 0 auto;
+  width: 200px;
+  height: 40px;
+  // margin: 0 auto;
 }
 
-.box1 h1, 
-.box2 h1, 
+.box1 h1,
+.box2 h1,
 .box3 h1 {
   margin-top: 400px;
 }
@@ -183,8 +184,11 @@ input.button.button-block {
 .theme-select-button {
   font-size: 25px;
   color: #fff;
-  bottom: 70px;
-  left: 260px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
   display: block;
   position: absolute;
   background-color: #0c60ee;
@@ -318,7 +322,7 @@ input.button.button-block {
 
 .send-function {
   height: 100px;
-  width: 50%; 
+  width: 50%;
   margin: 0 auto;
   border-radius: 15px;
   display: block;
@@ -336,7 +340,28 @@ input.button.button-block {
 
 /* HOW TO PAGE */
 
+.scroll {
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  padding: 71px 10px 20px 10px;
+  .bar {
+    top: 0 !important;
+  }
+}
+
 .home-page h2 {
   font-size: 22px;
   margin-top: 60px;
+}
+
+.themes {
+  .bar {
+    top: 0 !important;
+  }
 }
