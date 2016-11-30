@@ -31,8 +31,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     font-style: normal;
 }
 
-h1, h2, h3, h4, p {
+h1, h2, h3, h4, p, a {
   font-family: "gigergiger";
+  color: #323B8C;
 }
 
 .home-page {
@@ -67,19 +68,74 @@ h1, h2, h3, h4, p {
   // display: none !important;
 }
 
+/* GENERAL */
+
+.themes .bar,
+.maps-bar {
+  border-radius: 15px;
+}
+
+.wrapper .bar.maps-bar {
+  top: 71px !important; 
+  width: 97%;
+  margin: 0 10px;
+}
+
+.slider-pager {
+  bottom: 70px;
+}
+
+.scroll-content {
+  background: url("../assets/images/background-labi.jpg") no-repeat fixed center;
+  background-size: cover;
+}
+
+.bar.bar-positive {
+  border-color: #323B8C;
+  background-color: #323B8C;
+  background-image: linear-gradient(0deg, #323B8C, #323B8C 50%, transparent 50%);
+  color: #fff;
+}
+
+.bar-positive .button {
+  border-color: #323B8C;
+  background-color: #323B8C;
+  color: #fff;
+}
+
+.button.icon.ion-home,
+.button.icon.ion-navicon {
+  background: transparent !important;
+}
+
 /* HOME */
 
 .home-page img {
   margin: 80px auto 40px auto;
   display: block;
   width: 50%;
+  border-radius: 15px;
+}
+
+.home-page p {
+  font-size: 28px;
+  padding: 23px;
+  border: solid 1px #000;
+  border-radius: 15px;
+  background-color: #fff;
+  color: #323B8C;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  height: 70px;
 }
 
 /* BUTTONS */
 
 .play-button {
   margin-bottom: 20px !important;
-  background-color: rgba(22, 155, 213, 1);
+  background-color: #fff;
 }
 
 .theme-button {
@@ -87,18 +143,18 @@ h1, h2, h3, h4, p {
 }
 
 .button.active, .button.activated {
-  background-color: rgb(20, 112, 152) !important;
+  background-color: #fff !important;
 }
 
 .bluetooth-button,
 .theme-button,
 .how-to-button,
 .challenges-button {
-  background-color: rgba(22, 155, 213, 1);
+  background-color: #fff;
 }
 
 .button.button-block h1 {
-  color: #fff;
+  color: #323B8C;
 }
 
 a.button-block,
@@ -160,7 +216,7 @@ input.button.button-block {
 .box1,
 .box2,
 .box3 {
-  border: 2px solid blue;
+  border: transparent;
   height: 93vh;
 }
 
@@ -169,38 +225,75 @@ input.button.button-block {
   font-size: 25px;
 }
 
-.theme-select-button {
-  width: 200px;
-  height: 40px;
-  // margin: 0 auto;
-}
-
-.box1 h1,
-.box2 h1,
-.box3 h1 {
-  margin-top: 400px;
-}
+// .box1 h1,
+// .box2 h1,
+// .box3 h1 {
+//   margin-top: 400px;
+// }
 
 .theme-select-button {
-  font-size: 25px;
-  color: #fff;
+  width: 50%;
+  height: 100px;
+  font-size: 65px;
+  color: #323B8C;
   left: 0;
   bottom: 0;
   right: 0;
-  top: 0;
+  top: 700px;
   margin: auto;
   display: block;
   position: absolute;
-  background-color: #0c60ee;
+  background-color: #FFF;
+  border-radius: 15px;
+  padding: 25px;
 }
 
 .bar.bar-assertive {
-  border-color: #0c60ee !important;
-  background-color: #0c60ee !important;
+  border-color: #323B8C !important;
+  background-color: #323B8C !important;
 }
 
 .bar-subheader h2 {
   font-size: 27px !important;
+}
+
+.theme-easy {
+  margin-top: 65px;
+}
+
+.theme-easy img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+}
+
+.footer-theme-buttons a {
+  float: left;
+  height: 100px;
+  width: 40%;
+  margin-left: 9%;
+  margin-top: 50px !important;
+}
+
+.footer-theme-buttons a h1 {
+  font-size: 70px; 
+}
+
+.icons-theme-page {
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: #fff;
+  float: right;
+  height: 100px;
+  width: 40%;
+  margin-right: 9%;
+  margin-top: 50px;
+}
+
+.icons-theme-page img{
+  margin: 0 auto;
+  display: block;
+  padding: 15px;
 }
 
 /* GAME PAGE */
@@ -241,7 +334,7 @@ input.button.button-block {
 }
 
 .game-page h1 {
-  margin-top: 70px;
+  margin-top: 10px;
 }
 
 .function-spacement {
@@ -331,7 +424,7 @@ input.button.button-block {
 
 .send-function a {
   font-size: 70px;
-  padding-left: 50px;
+  text-align: center;
   display: block;
   margin-top: 35px;
   text-decoration: none;
@@ -364,4 +457,11 @@ input.button.button-block {
   .bar {
     top: 0 !important;
   }
+}
+
+/* MAPS PAGE */
+
+.footer-maps-buttons a {
+  height: 100px;
+  width: 80%;
 }
