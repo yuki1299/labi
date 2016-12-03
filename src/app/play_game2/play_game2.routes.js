@@ -10,14 +10,10 @@
     function routes($stateProvider) {
         $stateProvider
 
-        .state('tab.play_game2', {
+        .state('play_game2', {
             url: '/play_game2',
-            views: {
-                'tab-play_game2': {
-                    templateUrl: 'app/play_game2/play_game2.html',
-                    controller: 'PlayGame2Controller as vm'
-                }
-            }
+            templateUrl: 'app/play_game2/play_game2.html',
+            controller: 'PlayGame2Controller as vm'
         });
     }
 })();

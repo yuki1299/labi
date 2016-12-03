@@ -10,14 +10,10 @@
     function routes($stateProvider) {
         $stateProvider
 
-        .state('tab.challenge_map2', {
+        .state('challenge_map2', {
             url: '/challenge_map2',
-            views: {
-                'tab-challenge_map2': {
-                    templateUrl: 'app/challenge_map2/challenge_map2.html',
-                    controller: 'ChallengeMap2Controller as vm'
-                }
-            }
+            templateUrl: 'app/challenge_map2/challenge_map2.html',
+            controller: 'ChallengeMap2Controller as vm'
         });
     }
 })();
