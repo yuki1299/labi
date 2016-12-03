@@ -5,12 +5,17 @@
     .module('app')
     .run(runBlock);
 
-    runBlock.$inject = ['$ionicPlatform'];
+    runBlock.$inject = ['$ionicPlatform', '$cordovaSplashscreen'];
 
-    function runBlock($ionicPlatform) {
+    function runBlock($ionicPlatform, $cordovaSplashscreen) {
         $ionicPlatform.ready(function() {
             // Hide the accessory bar by default (remove this to show the accessory bar
             // above the keyboard for form inputs)
+            setTimeout(function() {
+                $cordovaSplashscreen.hide()
+            }, 10000);
+
+
             if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
                 cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
                 cordova.plugins.Keyboard.disableScroll(true);
