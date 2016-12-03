@@ -8,6 +8,7 @@
         'app.core',
         'ngCordova',
         'ngCordovaBluetoothLE',
+        angularDragula(angular),
 
         /* Feature areas */
         'app.play_game',
