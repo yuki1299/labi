@@ -472,6 +472,55 @@ input.button.button-block {
   }
 }
 
+.how-to-1 img {
+  width: 30%;
+  color: white;
+  border: solid 25px;
+  float: left;
+  margin: 0 10%;
+}
+
+.how-to-1 {
+  margin-top: 10%;
+}
+
+.how-to-1 h1,
+.how-to-3 h1,
+.how-to-4 h1 {
+  color: #fff;
+  padding: 5% 0 0;
+  margin-top: 0px;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+.how-to-1 h2,
+.how-to-3 h2,
+.how-to-4 h2 {
+  color: #fff;
+  padding: 0 0 10%;
+  margin-top: 0px;
+  float: left;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.how-to-3 img {
+  width: 30%;
+  color: white;
+  border: solid 25px;
+  margin: 0 auto;
+}
+
+.how-to-4 img {
+  width: 30%;
+  color: white;
+  border: solid 25px;
+  margin: 0 auto;
+}
+
 /* MAPS PAGE */
 
 .footer-maps-buttons a {
