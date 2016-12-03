@@ -25,8 +25,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 @font-face {
     font-family: 'gigergiger';
-    src: url('../assets/fontes/giger-webfont.woff2') format('woff2'),
-         url('../assets/fontes/giger-webfont.woff') format('woff');
+    src: url('../lib/ionic/fonts/giger-webfont.woff2') format('woff2'),
+         url('../lib/ionic/fonts/giger-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -36,6 +36,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 h1, h2, h3, h4, p, a {
   font-family: "gigergiger";
   color: #323B8C;
+}
+
+h1:first-child, .h1:first-child, h2:first-child, .h2:first-child, h3:first-child, .h3:first-child {
+  margin-bottom: 0px;
 }
 
 .home-page {
@@ -78,7 +82,7 @@ h1, h2, h3, h4, p, a {
 }
 
 .wrapper .bar.maps-bar {
-  top: 71px !important;
+  top: 91px !important;
   width: 97%;
   margin: 0 10px;
 }
@@ -127,7 +131,7 @@ h1, h2, h3, h4, p, a {
   background-color: #fff;
   color: #323B8C;
   text-align: center;
-  width: 60%;
+  width: 65%;
   margin: 0 auto;
   margin-bottom: 30px;
   height: 70px;
@@ -157,6 +161,11 @@ h1, h2, h3, h4, p, a {
 
 .button.button-block h1 {
   color: #323B8C;
+}
+
+.button.button-block, .button.button-full {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 a.button-block,
@@ -220,6 +229,7 @@ input.button.button-block {
 .box3 {
   border: transparent;
   height: 93vh;
+  margin-top: 20px;
 }
 
 .bar-subheader {
@@ -234,14 +244,14 @@ input.button.button-block {
 // }
 
 .theme-select-button {
-  width: 50%;
+  width: 70%;
   height: 100px;
   font-size: 65px;
   color: #323B8C;
   left: 0;
   bottom: 0;
   right: 0;
-  top: 700px;
+  top: 600px;
   margin: auto;
   display: block;
   position: absolute;
@@ -267,6 +277,7 @@ input.button.button-block {
   margin: 0 auto;
   display: block;
   border-radius: 15px;
+  margin-top: 150px;
 }
 
 .footer-theme-buttons a {
@@ -336,7 +347,7 @@ input.button.button-block {
 }
 
 .game-page h1 {
-  margin-top: 10px;
+  margin-top: 70px;
 }
 
 .function-spacement {
@@ -457,7 +468,7 @@ input.button.button-block {
 
 .themes {
   .bar {
-    top: 0 !important;
+    top: 20px !important;
   }
 }
 
@@ -465,5 +476,5 @@ input.button.button-block {
 
 .footer-maps-buttons a {
   height: 100px;
-  width: 80%;
+  width: 70%;
 }

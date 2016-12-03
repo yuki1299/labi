@@ -7,9 +7,15 @@
     </div>
     <div class="wrapper">
       <div class="home-page">
-        <img src="assets/images/labi-logo.jpg">
+        <img ng-src="assets/images/labi-logo.jpg"/>
         <p> Vamos aprender lógica com Labi!</p>
 
+        <a class="button button-block play-button" href="#/themes">
+           <h1>Jogar</h1>
+        </a>
+        <a class="button button-block bluetooth-button" ng-click="connect(selectedDevice)">
+           <h1>Bluetooth</h1>
+        </a>
         <a class="button button-block play-button" ng-click=initialize()>
            <h1>INICIALIZAR</h1>
         </a>
@@ -24,12 +30,6 @@
         </a>
         <a class="button button-block play-button" ng-click=scan()>
            <h1>Scan</h1>
-        </a>
-        <a class="button button-block play-button" href="#/themes">
-           <h1>JOGAR</h1>
-        </a>
-        <a class="button button-block bluetooth-button" ng-click="connect(selectedDevice)">
-           <h1>BLUETOOTH</h1>
         </a>
       </div>
     </div>
