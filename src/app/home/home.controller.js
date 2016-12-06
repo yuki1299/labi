@@ -130,6 +130,99 @@
             }, 1, count);
         };
 
+        $scope.testD = function() {
+        //Set this to something higher to verify queueing on read/write
+            var count = 1;
+
+            alert('enviado');
+
+            $interval(function() {
+              var params = {
+                address: "20:16:05:11:53:99",
+                characteristic: "2a38",
+                type: "noResponse",
+                service: "180d",
+                value: $cordovaBluetoothLE.bytesToEncodedString($cordovaBluetoothLE.stringToBytes("D")),
+                timeout: 5000
+              };
+
+              //Uncomment if you'd like to force some errors
+              /*var random = Math.random();
+              if (random < .50) {
+                params.address = "AA:AA:AA:AA:AA:AA";
+              }*/
+
+              alert("Write : " + JSON.stringify(params));
+              $cordovaBluetoothLE.write(params).then(function(obj) {
+                alert("Write Success : " + JSON.stringify(obj));
+              }, function(obj) {
+                alert("Write Error : " + JSON.stringify(obj));
+              });
+            }, 1, count);
+        };
+
+        $scope.testF = function() {
+        //Set this to something higher to verify queueing on read/write
+            var count = 1;
+
+            alert('enviado');
+
+            $interval(function() {
+              var params = {
+                address: "20:16:05:11:53:99",
+                characteristic: "2a38",
+                type: "noResponse",
+                service: "180d",
+                value: $cordovaBluetoothLE.bytesToEncodedString($cordovaBluetoothLE.stringToBytes("F")),
+                timeout: 5000
+              };
+
+              //Uncomment if you'd like to force some errors
+              /*var random = Math.random();
+              if (random < .50) {
+                params.address = "AA:AA:AA:AA:AA:AA";
+              }*/
+
+              alert("Write : " + JSON.stringify(params));
+              $cordovaBluetoothLE.write(params).then(function(obj) {
+                alert("Write Success : " + JSON.stringify(obj));
+              }, function(obj) {
+                alert("Write Error : " + JSON.stringify(obj));
+              });
+            }, 1, count);
+        };
+
+        $scope.testE = function() {
+        //Set this to something higher to verify queueing on read/write
+            var count = 1;
+
+            alert('enviado');
+
+            $interval(function() {
+              var params = {
+                address: "20:16:05:11:53:99",
+                characteristic: "2a38",
+                type: "noResponse",
+                service: "180d",
+                value: bluetoothSerial.write("E", success, failure);
+                timeout: 5000
+              };
+
+              //Uncomment if you'd like to force some errors
+              /*var random = Math.random();
+              if (random < .50) {
+                params.address = "AA:AA:AA:AA:AA:AA";
+              }*/
+
+              alert("Write : " + JSON.stringify(params));
+              $cordovaBluetoothLE.write(params).then(function(obj) {
+                alert("Write Success : " + JSON.stringify(obj));
+              }, function(obj) {
+                alert("Write Error : " + JSON.stringify(obj));
+              });
+            }, 1, count);
+        };
+
 
         $scope.discover = function() {
             var params = {
