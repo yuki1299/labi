@@ -169,7 +169,7 @@
 
             $interval(function() {
               var params = {
-                address: "20:16:05:11:53:99",
+                address: "HC-06",
                 characteristic: "2a38",
                 type: "noResponse",
                 service: "180d",
